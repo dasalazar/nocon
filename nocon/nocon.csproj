@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{014DD11E-73FF-4558-B6B1-27D7994CD39C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nocon</RootNamespace>
+    <AssemblyName>nocon</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=2.102.2.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bus\ClsBdOra.cs" />
+    <Compile Include="Bus\ClsBdSql.cs" />
+    <Compile Include="Bus\ClsClienteBus.cs" />
+    <Compile Include="Bus\ClsEmailBus.cs" />
+    <Compile Include="Bus\ClsEquipamentoBus.cs" />
+    <Compile Include="Bus\ClsIncidenteBus.cs" />
+    <Compile Include="Bus\ClsMonitoracaoBus.cs" />
+    <Compile Include="Bus\ClsParametroBus.cs" />
+    <Compile Include="Bus\ClsTempoExecucaoBus.cs" />
+    <Compile Include="Bus\ClsWebserviceBus.cs" />
+    <Compile Include="Dao\ClsClienteDao.cs" />
+    <Compile Include="Dao\ClsEmailDao.cs" />
+    <Compile Include="Dao\ClsEquipamentoDao.cs" />
+    <Compile Include="Dao\ClsIncidenteDao.cs" />
+    <Compile Include="Dao\ClsMonitoracaoDao.cs" />
+    <Compile Include="Dao\ClsParametroDao.cs" />
+    <Compile Include="Data\ClsCliente.cs" />
+    <Compile Include="Data\ClsEmail.cs" />
+    <Compile Include="Data\ClsIncidente.cs" />
+    <Compile Include="Data\ClsMonitoracao.cs" />
+    <Compile Include="Data\ClsEquipamento.cs" />
+    <Compile Include="Data\ClsParametro.cs" />
+    <Compile Include="Data\ClsWebservice.cs" />
+    <Compile Include="FrmNocon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNocon.Designer.cs">
+      <DependentUpon>FrmNocon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmNocon.resx">
+      <DependentUpon>FrmNocon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\bin\Debug\nocon.exe
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\bin\Debug\nocon.pdb
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\obj\x86\Debug\nocon.FrmNocon.resources
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\obj\x86\Debug\nocon.Properties.Resources.resources
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\obj\x86\Debug\nocon.csproj.GenerateResource.Cache
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\obj\x86\Debug\nocon.exe
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\obj\x86\Debug\nocon.pdb
+C:\Users\dsalazar\Documents\Visual Studio 2010\Projects\nocon\nocon\obj\x86\Debug\nocon.csprojResolveAssemblyReference.cache
